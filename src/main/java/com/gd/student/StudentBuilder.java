@@ -5,7 +5,10 @@ import com.gd.student.model.Student;
 import lombok.Getter;
 
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.Date;
+
 @Getter
 public class StudentBuilder {
     public static void main(String[] args) throws ParseException {
@@ -23,8 +26,14 @@ public class StudentBuilder {
     asigment.addAssigment(studentOne, Program.JAVA_DEV);
     asigment.addAssigment(studentTwo, Program.AQE);
 
+
         Report report = new Report(asigment);
         report.Print(studentOne);
+        report.Print(studentTwo);
+        ReportFull reportFull = new ReportFull(asigment);
+        reportFull.PrintFull(studentOne);
+        reportFull.PrintFull(studentTwo);
+
 }
 
 }
