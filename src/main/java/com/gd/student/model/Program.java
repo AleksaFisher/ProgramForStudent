@@ -16,7 +16,7 @@ public enum Program {
     public final String name;
     public final List <Course> courses;
 
-    public static int getDuration(){
+    public int getDuration(){
         return courses.stream().mapToInt(Course::getDuration).sum();
     }
 }
