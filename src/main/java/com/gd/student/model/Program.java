@@ -2,6 +2,7 @@ package com.gd.student.model;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -12,10 +13,10 @@ import static com.gd.student.model.Course.*;
 public enum Program {
     JAVA_DEV("Java Developer", List.of(JAVA, JDBC, SPRING)),
     AQE ("Automation QE", List.of(TESTDESIGN, PAGEOBJECT, SELENIUM) );
-    private final String name;
-    private final List <Course> courses;
+    public final String name;
+    public final List <Course> courses;
 
-    public int getDuration(){
+    public static int getDuration(){
         return courses.stream().mapToInt(Course::getDuration).sum();
     }
 }

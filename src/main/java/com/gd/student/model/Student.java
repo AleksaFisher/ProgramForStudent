@@ -10,7 +10,8 @@ import java.time.LocalDateTime;
 public class Student {
     String firstname;
     String lastname;
-
+    Program program;
+    LocalDateTime startDate;
 
     public String getFirstname(){
         return String.valueOf(this.firstname);

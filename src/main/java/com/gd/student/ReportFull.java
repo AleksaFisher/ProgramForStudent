@@ -44,11 +44,11 @@ public class ReportFull {
         int duration = getProgramDuration(student) / 8;
         System.out.println("Student name: " +student.getLastname()+" " + student.getFirstname());
         System.out.println("Working time: from 10 to 18");
-        System.out.println("Program name" + asigment.getAssigment(student));
-        System.out.println("program duration (hours)" + duration);
-        System.out.println("Start date" + start_date);
-        System.out.println("End date: " + String.format("{%s} {%s}", calculateEndDate(start_date, duration)));
-        System.out.println("how much time has passed / remains until completion" );
+        System.out.println("Program name " + asigment.getAssigment(student));
+        System.out.println("program duration (hours) " + duration);
+        System.out.println("Start date " + start_date);
+        System.out.println("End date: " + String.format("{%s} {%s}", calculateEndDate(start_date, duration), duration));
+        System.out.println("how much time has passed / remains until completion" + duration + " days" );
 
 
 
@@ -56,7 +56,7 @@ public class ReportFull {
     public Date readDate() throws ParseException {
         System.out.print("Enter date: ");
         Scanner sc = new Scanner(System.in);
-        //System.out.print("Enter date: ");
+        System.out.print("Enter date: ");
         String dateInString = sc.next();
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
         //SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.ENGLISH);
