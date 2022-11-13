@@ -26,17 +26,7 @@ public class StudentBuilder {
             .program(Program.AQE)
             .startDate(LocalDateTime.of(2020, 6, 1, 10, 0))
             .build();
-    ProgrammAsigment asigment= new ProgrammAsigment();
-    asigment.addAssigment(studentOne, Program.JAVA_DEV);
-    asigment.addAssigment(studentTwo, Program.AQE);
 
-
-        Report report = new Report(asigment);
-        report.Print(studentOne);
-        report.Print(studentTwo);
-       // ReportFull reportFull = new ReportFull(asigment);
-       // reportFull.PrintFull(studentOne);
-       // reportFull.PrintFull(studentTwo);
 
 }
 
