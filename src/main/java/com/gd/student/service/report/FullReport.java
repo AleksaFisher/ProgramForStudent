@@ -18,7 +18,9 @@ public class FullReport extends Report{
 
     public FullReport(DateCalculator dateCalculator) {
         dateCalculator = this.DateCalculator;
+        reportType = ReportType.FULL.toString();
     }
+
 //@Override
     public  void PrintFull(Student student, Reader start_date)  {
         int duration = getProgramDuration(student) / 8;

@@ -27,7 +27,7 @@ public class Main {
         Report report = Report.create(ReportType.fromString(chooseReport));
         String b;
         b = report.getReportType();
-
+        System.out.println(b);
 
 
 

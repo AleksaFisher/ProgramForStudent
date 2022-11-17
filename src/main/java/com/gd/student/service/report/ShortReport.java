@@ -12,6 +12,7 @@ import static com.gd.student.service.calculate.DateCalculator.calculateEndDate;
 public class ShortReport extends Report {
     public ShortReport(com.gd.student.service.calculate.DateCalculator dateCalculator) {
         dateCalculator = this.DateCalculator;
+        reportType = ReportType.SHORT.toString();
     }
 
     @Override
